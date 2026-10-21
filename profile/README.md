@@ -1,33 +1,32 @@
 # VL
 
-Building expressive UI components, animations, and developer tools for modern web experiences.
+**Building expressive UI components, animations, and developer tools for modern web experiences.**
 
-## About
-
-VL is the shared development workspace for our small team. We focus on
-developer tools and UI experiences: well-designed components, motion-rich
-interfaces, and the tooling that keeps building them fast and enjoyable.
-
-We value open collaboration, clean architecture, and quality-first
-engineering. Small scope, high standards.
-
-## Current Work
-
-**Component & Animation Marketplace** — a monorepo (Bun Workspaces) for
-reusable UI components and animations, built on:
-
-- TypeScript
-- React + Next.js
-- Bun + Express
-- PostgreSQL
-
-Foundation has been laid out: monorepo tooling, Docker setup, and CI. Feature
-work is in progress.
+VL (`longvan-startup`) is the shared engineering workspace for our products —
+currently a component & animation marketplace and the Vivudee product website.
 
 ## Projects
 
-<!-- Placeholder: update with project links as they become public. -->
+| Repository | Description | Stack | Link |
+|---|---|---|---|
+| [`component-marketplace`](https://github.com/longvan-startup/component-marketplace) | Component & animation marketplace — monorepo foundation with Docker + CI hardening (no business logic yet) | Bun · Next.js 19 · Express 5 · PostgreSQL | — |
+| [`Vivudee_Website`](https://github.com/longvan-startup/Vivudee_Website) | Vivudee product website — deployed on Vercel, with an Express + MySQL API in development | React 19 · Vite 8 · Express 5 · MySQL | [vivudee.vercel.app](https://vivudee.vercel.app) |
+
+## Engineering standards
+
+We keep our harness small but enforced:
+
+- **Workflow** — everything goes through feature branches + pull requests; `main` is guarded by CI and code review. See [`component-marketplace/CONTRIBUTING.md`](https://github.com/longvan-startup/component-marketplace/blob/main/CONTRIBUTING.md).
+- **Commits** — [Conventional Commits](https://www.conventionalcommits.org/) (`feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `ci`).
+- **Quality gates** — lint, typecheck, test, build, and Docker runtime smoke run on every PR. Standards live in [`docs/ENGINEERING.md`](https://github.com/longvan-startup/component-marketplace/blob/main/docs/ENGINEERING.md).
+- **Agent-friendly** — repo pairs include `AGENTS.md` instructions for AI coding agents (OpenCode, Codex, T3 Code).
+
+## Team
+
+- [`@NguyenTuMinhLong`](https://github.com/NguyenTuMinhLong) — product, engineering lead
+- [`@DaoDungVan`](https://github.com/DaoDungVan) — backend & database
 
 ## Contact
 
-<!-- Placeholder: add a team email or preferred contact channel. -->
+The fastest channel is GitHub — open an issue or a discussion in the relevant
+repository.
